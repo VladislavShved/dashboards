@@ -1,0 +1,22 @@
+.new-dashboard-form {
+  text-align: center;
+
+  .input-group {
+    position: relative;
+    margin-bottom: 10px;
+
+    span {
+      font-size: 40px;
+    }
+
+    input {
+      height: 20px;
+      width: 200px;
+    }
+  }
+
+  .dashboard-create-btn {
+    height: 20px;
+    width: 200px;
+  }
+}

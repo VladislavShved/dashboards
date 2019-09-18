@@ -1,0 +1,24 @@
+<div class="wrapper">
+
+  <div class="action-buttons">
+    <div class="add-new-button">
+      <%= link_to 'Add new +', 'dashboards/new' %>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="dashboards gridly">
+      <% @dashboards.each do |dashboard| %>
+        <div id="dashboard-<%= dashboard.id %>" class="brick small dashboard">
+          <span class="text">
+            <%= dashboard.text %>
+          </span>
+          <div class="edit-dashboard">
+            <%= link_to 'Edit', edit_dashboard_path(dashboard) %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>

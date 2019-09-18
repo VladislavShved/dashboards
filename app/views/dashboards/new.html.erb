@@ -1,0 +1,10 @@
+<%= form_for @dashboard, url: 'create', html: { class: 'new-dashboard-form' } do |f| %>
+    <div class="input-group">
+      <span>
+        Text:
+      </span>
+      <%= f.text_field :text, class: 'dashboard-text' %>
+    </div>
+    <br/>
+    <%= f.submit 'Create', class: 'dashboard-create-btn' %>
+<% end %>

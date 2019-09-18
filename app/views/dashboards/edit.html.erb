@@ -1,0 +1,10 @@
+<%= form_for @dashboard, url: dashboard_path(@dashboard), method: :put, html: { class: 'new-dashboard-form' } do |f| %>
+    <div class="input-group">
+      <span>
+        Text:
+      </span>
+      <%= f.text_field :text, class: 'dashboard-text' %>
+    </div>
+    <br/>
+    <%= f.submit 'Update', class: 'dashboard-create-btn' %>
+<% end %>
